@@ -22,12 +22,18 @@
             gap:20px;
         }
         .flexible-item{
-            flex:1 0 auto;
+            flex:1 0 300px;
             display: flex;
             align-items: start;
             flex-direction: column;
             justify-content: end;
-            min-width: 300px;
+        }
+        .flexible-item-button{
+            flex:1 0 150px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: end;
         }
         button{
             width: 100%;
@@ -63,7 +69,7 @@
             <p>Email:</p>    
             <input name="email" id="Email" placeholder="stanislav.cards@gmail.com">
         </div>
-        <div class="flexible-item"  >
+        <div class="flexible-item-button">
             <button type="submit">Submit</button>
         </div>
       </div>
