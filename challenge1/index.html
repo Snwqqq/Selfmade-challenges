@@ -4,19 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>challenge1</title>
+    <style>
+        p{
+            margin: 7px 0;
+        }
+        .background{
+            background-color: rgb(0, 30, 39);   
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flex-container{
+            border: 1px solid white;
+            border-radius: 3px;
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+            gap:20px;
+        }
+        .flexible-item{
+            flex:1 0 auto;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: end;
+            min-width: 300px;
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 0;
+            background-color: rgb(46, 48, 48);
+            border: none;
+            border-radius: 4px;
+        }
+        input{
+            background-color: rgba(0,0,0,0);
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid white;
+            height: 30px;
+        }
+        input::placeholder{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="background">
       <div class="flex-container">
-        <div>
-          <p>Name</p>    
+        <div class="flexible-item">
+          <p>Name:</p>    
           <input name="text" id="Name" placeholder="Stas">
         </div>
-        <div>
-            <p>Email</p>    
+        <div class="flexible-item">
+            <p>Email:</p>    
             <input name="email" id="Email" placeholder="stanislav.cards@gmail.com">
         </div>
-        <div>
+        <div class="flexible-item"  >
             <button type="submit">Submit</button>
         </div>
       </div>
